@@ -1,0 +1,18 @@
+body {
+    font-family: "Arial", "Helvetica", sansserif;
+}
+h1{
+    background-image: url("../img/body-background.png");
+}
+h2 {
+    border-bottom: 2px solid #333333;
+}
+figure {
+        background-color: #F2EDED;
+        border: 1px solid #ccc;
+        text-align: center;
+}    
+figcaption {
+    font-style: italic;
+}
+            
