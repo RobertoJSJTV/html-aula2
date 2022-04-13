@@ -1,7 +1,6 @@
-@media (min-width: 600px){
-    img {
-        float: left;
-    }
+.cores label::after{
+    border: 6px solid rgba(0,0,0,0);
+    transition: 1s;
 }
 
 .cores label::after{
@@ -13,11 +12,6 @@
     position: absolute;
     top: 30px;
     cursor: pointer;
-}
-
-.cores label::after{
-    border: 6px solid rgba(0,0,0,0);
-    transition: 1s;
 }
 .cores label:hover::after{
     border: 6px solid rgba(0,0,0,0.1);
@@ -45,7 +39,7 @@
 .cores input:not(:checked) + label img {
     display: none;
 }
-label input[type=radio]{
+.cores input[type=radio]{
     display: none;
 }
 
@@ -86,4 +80,31 @@ label[for=azul]::after{
     display: block;
     padding: 0.5em 1em;
     margin: 1em 0;
+}
+
+@media (min-width: 600px){
+    .produto{
+        position: relative;
+        padding-left: 40%;
+        font-size: 1.2em;
+    }
+    .cores {
+        position: static;
+        padding: 0;
+    }
+    .cores legend {
+        position: static;
+    }
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 35%;
+        max-height: 100%;
+    }
+    .cores label:after{
+        position: static;
+        float: left;
+        margin-right: 10px;
+    }
 }
